@@ -6,6 +6,7 @@
  * @brief This file simply serves up the original angular frontpage
  */
 echo doctype('html5');
+echo "Currently in the 'views/polls.php' Page"
 ?>
 
 
