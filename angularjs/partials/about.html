@@ -1,0 +1,21 @@
+<h1>About Page</h1>
+<p>I hope you are enjoying Poll List so far!</p>
+<p>This page has been developed with Angular.js and RESTful services.</p>
+<p>I have used three mySQL tables in my design, which are 'Polls', 'Answers', and 'Votes'. I only required one model, named 'Poll'.</p>
+<p>I believe that I have gone part of the 'extra mile' because I have used Bootstrap in my design.</p>
+<p>I also have a partially implemented function for creating polls (please check it out), but it is not finished.</p>
+<p>I know that this might not be sufficent for full credit in that 'extra mile' field, but I do think it deserves something.</p>
+<p>I am new to using bootstrap, but I have implemented some basic aesthetics, such as tables and buttons.</p>
+<br>
+<h4>Please Read:</h4>
+<p class='thick'>You will notice that some of the Web Services (i.e. GET polls) will return some unnecessary fields populated with 'null'.</p>
+<p class='thick'>This is because I am only populating the Poll object with the requested attributes, namely the id and title.</p>
+<p class='thick'>Also, I originally misunderstood what was needed for the database requirements, so I implemented some of the website
+    functionality in an atypical way.</p>
+<p class='thick'>Regardless, the database and website functionality specifications have all been met, so I do not expect to be marked down for this.</p>
+<p class='thick'>Specifically, there is a field in the 'Answers' table that counts the number of votes rather than using a SQL query over the 'Votes' table</p>
+<p class='thick'>I'm aware that this is an odd way to implement it, but it was a matter of preference.</p>
+<br>
+<p>If you wish to contact me for questions, please email me at: {{email}}</p>
+<p>Author: {{ author }}, ID: {{studId}}</p>
+<a class='btn btn-primary btn-sm' href="#/polls">Home</a>

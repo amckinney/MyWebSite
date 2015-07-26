@@ -1,0 +1,19 @@
+<h1>Poll: <span>{{name}}</span></h1>
+<h2>{{question}}</h2>
+<p>Select from the choices below to cast a vote!</p>
+<ul class='center'>
+    <form ng-submit="addVote()">
+      <li ng-repeat="answer in answers">
+        <input type="radio" ng-model="vote.choice" value="{{answer.id}}">{{answer.description}}
+      </li>
+      <div ng-show="vote.choice!='none'">
+        <input type="submit" value="Submit Vote!">
+      </div>
+    </form>
+</ul>
+
+<p ng-show="submitted && !reset && vote.choice=='none'">Thanks for voting!</p>
+<p ng-show="reset && vote.choice=='none'">The votes have been reset!</p>
+<p>If you would like to reset this poll so that all the votes are back to 0, click <a href ng-click="resetVotes()">here.</a></p>
+
+<a class='btn btn-primary btn-sm' href="#/polls">Home</a>

@@ -1,0 +1,13 @@
+<h1>Create a Poll!</h1>
+<form ng-submit="displayMessage()">
+  Title: <input type="text" ng-model="title"><br>
+  Question: <input type="text" ng-model="question"><br>
+  <fieldset ng-repeat="answer in answerFields">
+    Answer:<input type="text" ng-model="answer.description">
+    <button class="btn btn-danger btn-sm" ng-show="$last" ng-click="removeAnswer()">-</button>
+  </fieldset>
+  <button class="btn btn-success btn-sm" ng-click="addAnswer()">Add Answer</button><br><br>
+  <input ng-show="checkReady()" type="submit" value="Create Poll!">
+</form>
+<p>{{message}}</p>
+<a class='btn btn-primary btn-sm' href="#/polls">Home</a>

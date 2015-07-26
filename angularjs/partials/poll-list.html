@@ -1,0 +1,14 @@
+<h1>Poll List</h1>
+<p>Welcome to Poll List!</p>
+<p>Browse from the polls below and select one to vote!</p>
+<p>You may be interested in the <a href="#/about">about</a> page.</p>
+<table class='table' align="center">
+  <tr ng-repeat="poll in polls">
+    <td>
+      <a href="#/polls/{{poll.id}}">{{poll.title}}</a>
+      <a href="#/votes/{{poll.id}}" class="btn btn-primary btn-sm">View Votes</a>
+    </td>
+  </tr>
+</table>
+<a href="#/polls/create/" class="btn btn-success btn-sm">Create New Post</a><br>
+<p>Author: {{ author }}, ID: {{studId}}</p>
