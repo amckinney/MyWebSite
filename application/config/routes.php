@@ -39,7 +39,7 @@
 */
 
 $route['default_controller'] = "home";
-$route['polls']              = "polls"
+$route['polls']              = "polls";
 $route['polls/(:any)']       = "polls/$1";
 $route['services/(:any)']    = "services/$1";
 $route['404_override']       = '';
