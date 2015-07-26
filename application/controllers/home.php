@@ -3,10 +3,10 @@
 /**
  * @file polls.php
  * @author Alex McKinney
- * @date 5 June 2015
- * @brief The Polls Controller
+ * @date 26 July 2015
+ * @brief The Home Page Controller
  */
-class Polls extends CI_Controller
+class Home extends CI_Controller
 {
     /**
      * Loads the front angular page
@@ -15,6 +15,6 @@ class Polls extends CI_Controller
     {
         $this->load->helper('html');
         $this->load->helper('url');
-        $this->load->view('polls');
+        $this->load->view('home');
     }
 }

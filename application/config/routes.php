@@ -38,9 +38,11 @@
 |
 */
 
-$route['default_controller'] = "polls"; //TODO: Change this when more functionality is added.
-$route['services/(:any)'] = "services/$1";
-$route['404_override'] = '';
+$route['default_controller'] = "home";
+$route['polls']              = "polls"
+$route['polls/(:any)']       = "polls/$1";
+$route['services/(:any)']    = "services/$1";
+$route['404_override']       = '';
 
 
 /* End of file routes.php */
