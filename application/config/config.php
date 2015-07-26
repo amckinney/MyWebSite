@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'https://alexmckinney.herokuapp.com/polls';
+$config['base_url']	= 'https://alexmckinney.herokuapp.com';
 
 /*
 |--------------------------------------------------------------------------

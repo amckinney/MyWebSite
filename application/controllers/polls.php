@@ -13,7 +13,7 @@ class Polls extends CI_Controller
      */
     public function index()
     {
-        echo "Opening polls...";
+        echo "Opening polls...\n";
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('polls');
