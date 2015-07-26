@@ -5,16 +5,16 @@
 
     var pollsApp = angular.module('pollsApp', [
       'ngRoute',
-      'homeControllers',
-      'pollsControllers'
+      'controllers/homeControllers',
+      'controllers/pollsControllers'
     ]);
 
     pollsApp.config(['$routeProvider',
       function($routeProvider) {
         $routeProvider.
           when('/home', {
-             templateUrl: 'angularjs/partials/home.html',
-             controller: 'HomeCtrl'
+            templateUrl: 'angularjs/partials/home.html',
+            controller: 'HomeCtrl'
           }).
           when('/polls', {
             templateUrl: 'angularjs/partials/poll-list.html',

@@ -12,4 +12,4 @@
          $scope.author = 'Alex McKinney';
          $scope.email  = 'amckinney@berkeley.edu';
    }]);
-}())
+}());
