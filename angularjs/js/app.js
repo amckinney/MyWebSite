@@ -5,8 +5,8 @@
 
     var pollsApp = angular.module('pollsApp', [
       'ngRoute',
-      'controllers/homeControllers',
-      'controllers/pollsControllers'
+      'homeControllers',
+      'pollsControllers'
     ]);
 
     pollsApp.config(['$routeProvider',
