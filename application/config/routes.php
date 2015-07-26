@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "polls";
+$route['default_controller'] = "polls"; //TODO: Change this when more functionality is added.
 $route['services/(:any)'] = "services/$1";
 $route['404_override'] = '';
 

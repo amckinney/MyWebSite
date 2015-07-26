@@ -21,7 +21,7 @@ echo "Currently in the 'views/polls.php' Page\n"
     "angularjs/scripts/angular.js",
     "angularjs/scripts/angular-route.js",
     "angularjs/js/app.js",
-    "angularjs/js/controllers.js"
+    "angularjs/js/controllers/pollsControllers.js" #TODO: Come up with a way to fancily include every subdirectory
     );
   $scripts = "";
   foreach ($links as $value) {
