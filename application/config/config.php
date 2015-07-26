@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://csse-studweb3.canterbury.ac.nz/~amc359/365/polls/';
+$config['base_url']	= 'https://alexmckinney.herokuapp.com/polls';
 
 /*
 |--------------------------------------------------------------------------

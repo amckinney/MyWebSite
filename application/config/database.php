@@ -48,10 +48,12 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'mysql.cosc.canterbury.ac.nz';
-$db['default']['username'] = 'amc359';
-$db['default']['password'] = '24993165';
-$db['default']['database'] = 'amc359';
+$url = parse_url(getenv("mysql://bde09098c35fc1:d0dff417@us-cdbr-iron-east-02.cleardb.net/heroku_32a0f8984086e3a?reconnect=true"));
+
+$db['default']['hostname'] = 'us-cdbr-iron-east-02.cleardb.net';
+$db['default']['username'] = $url['bde09098c35fc1'];
+$db['default']['password'] = $url['d0dff417'];
+$db['default']['database'] = substr($url['heroku_32a0f8984086e3a'],1);;
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
