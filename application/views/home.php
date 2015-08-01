@@ -14,7 +14,6 @@ echo doctype('html5');
   <meta charset="utf-8">
   <title>Alex McKinney</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <link href="angularjs/css/site.css" type="text/css" rel="stylesheet">
   <?php
   $links = array (
     "angularjs/scripts/angular.js",
