@@ -20,7 +20,7 @@ echo doctype('html5');
     "angularjs/scripts/angular.js",
     "angularjs/scripts/angular-route.js",
     "angularjs/js/app.js",
-    "angularjs/js/controllers/pollsControllers.js" #TODO: Come up with a way to fancily include every subdirectory
+    "angularjs/js/controllers/pollsControllers.js" #TODO: Come up with a way to fancy include every subdirectory
     );
   $scripts = "";
   foreach ($links as $value) {
@@ -35,7 +35,8 @@ echo doctype('html5');
 </head>
 <body>
 
-  <div ng-view></div>
+   <?php echo include("includes/header.html"); ?>
+   <div ng-view></div>
 
 </body>
 </html>

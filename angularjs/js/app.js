@@ -37,7 +37,7 @@
             controller: 'AboutCtrl'
           }).
           otherwise({
-            redirectTo: '/polls'
+            redirectTo: '/home'
           });
       }]);
 }())
