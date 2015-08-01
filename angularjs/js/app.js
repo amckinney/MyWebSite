@@ -40,4 +40,5 @@
             redirectTo: '/home'
           });
       }]);
+
 }())
