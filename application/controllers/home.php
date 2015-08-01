@@ -13,7 +13,6 @@ class Home extends CI_Controller
      */
     public function index()
     {
-        echo("Heroku is updating...");
         $this->load->helper('html');
         $this->load->helper('url');
         $this->load->view('home');
