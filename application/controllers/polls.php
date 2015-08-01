@@ -13,8 +13,9 @@ class Polls extends CI_Controller
      */
     public function index()
     {
-        $this->load->helper('html');
-        $this->load->helper('url');
-        $this->load->view('polls');
+      echo("Loading polls...");
+      $this->load->helper('html');
+      $this->load->helper('url');
+      $this->load->view('polls');
     }
 }
