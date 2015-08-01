@@ -34,7 +34,7 @@ echo doctype('html5');
 
 </head>
 <body>
-   <?php echo include("../includes/header.html"); ?>
+   <?php echo include __DIR__ . "/../includes/header.html"; ?>
    <div ng-view></div>
 </body>
 </html>
